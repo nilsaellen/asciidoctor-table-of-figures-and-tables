@@ -49,7 +49,7 @@ public class ToftotTreeProcessor extends Treeprocessor {
     private List<String> generateFigureVzLines() {
         List<String> figureVzLines = new LinkedList<>();
         for (int i = 1; i <= figureMap.size(); i++) {
-            String line2 = "<a anchor=\"_tof0000" + i + "\">" + "Abbildung " + i + ": " + figureMap.get(i) + "</a>";
+            String line2 = "<a anchor=\"_tof0000" + i + "\">" + "Figure " + i + ": " + figureMap.get(i) + "</a>";
             figureVzLines.add(line2 + "<br>");
         }
         return figureVzLines;
@@ -58,7 +58,7 @@ public class ToftotTreeProcessor extends Treeprocessor {
     private List<String> generateTableVzLines() {
         List<String> tableVzLines = new LinkedList<>();
         for (int i = 1; i <= tableMap.size(); i++) {
-            String line2 = "<a anchor=\"_tot0000" + i + "\">" + "Tabelle " + i + ": " + tableMap.get(i) + "</a>";
+            String line2 = "<a anchor=\"_tot0000" + i + "\">" + "Table " + i + ": " + tableMap.get(i) + "</a>";
             tableVzLines.add(line2 + "<br>");
         }
         return tableVzLines;
